@@ -5,7 +5,7 @@ def isprime(n):
     if n == 1:
         return False
     else:
-        for i in range(2, isqrt(n)): #isqrt gives us the square root rounded down to the nearest integer
+        for i in range(2, isqrt(n)+1): #isqrt gives us the square root rounded down to the nearest integer
             if n % i == 0:
                 return False
         return True
